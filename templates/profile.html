@@ -29,7 +29,7 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
     </div>
   </div>
   <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-padding-large w3-hover-white" title="My Account">
-    <img src="Erin-Uritus.jpg" class="w3-circle" style="height:23px;width:23px" alt="Avatar">
+    <img src="{{url_for('static', filename='Erin-Uritus.jpg')}}" class="w3-circle" style="height:23px;width:23px" alt="Avatar">
   </a>
  </div>
 </div>
@@ -59,7 +59,7 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
     
       <div class="w3-white w3-text-grey w3-card-4">
         <div class="w3-display-container">
-          <img src="Erin-Uritus.jpg" style="width:100%" alt="Avatar">
+          <img src="{{url_for('static', filename='Erin-Uritus.jpg')}}"style="width:100%" alt="Avatar">
           <div class="w3-display-bottomleft w3-container w3-text-white">
             <h2>Erin Uritus</h2>
           </div>
@@ -113,8 +113,8 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
         <hr class="w3-clear">
         <p>Today 32 corporations and NGOS, who jointly employ 100,000 employees in Brazil, are using their voices to urge Brazil’s 2018 presidential candidates to recognize the importance of LGBTQ inclusion in the workplace</p>
           <div class="w3-row-padding" style="margin:0 -16px">
-              <img class="w3-half" src="NothingMoreNothingLess.jpg" style="width:50%">
-              <img class="w3-half" src="NadaMaisNadaMenos.jpg" style="width:50%"> 
+              <img class="w3-half" src="{{url_for('static', filename='NothingMoreNothingLess.jpg')}}" style="width:50%">
+              <img class="w3-half" src="{{url_for('static', filename='NadaMaisNadaMenos.jpg')}}" style="width:50%"> 
         </div>
         <button type="button" class="w3-button w3-theme-d1 w3-margin-bottom"><i class="fa fa-thumbs-up"></i>  Like</button> 
         <button type="button" class="w3-button w3-theme-d2 w3-margin-bottom"><i class="fa fa-comment"></i>  Comment</button> 

@@ -13,14 +13,14 @@
     <!-- Bootstrap core CSS -->
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <!-- Custom styles for this template -->
-    <link href="form-validation.css" rel="stylesheet">
+    <link href="{{url_for('static', filename='form-validation.css')}}" rel="stylesheet">
   </head>
 
   <body class="bg-light">
 
     <div class="container">
       <div class="py-5 text-center">
-        <img class="d-block mx-auto mb-4" src="company_logo.png" alt="" width="275" height="75">
+        <img class="d-block mx-auto mb-4" src="{{url_for('static', filename='company_logo.png')}}" alt="" width="275" height="75">
         <h2>Sign Up for Out & Equal</h2>
         <p class="lead">Sign up with your company below</p>
       </div>
