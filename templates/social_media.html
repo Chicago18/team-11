@@ -29,7 +29,7 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Open Sans", sans-serif}
     </div>
   </div>
   <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-padding-large w3-hover-white" title="My Account">
-    <img src="logo1.png" class="w3-circle" style="height:23px;width:23px" alt="Avatar">
+    <img src="{{url_for('static', filename='logo1.png')}}" class="w3-circle" style="height:23px;width:23px" alt="Avatar">
   </a>
  </div>
 </div>
@@ -52,7 +52,7 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Open Sans", sans-serif}
       <div class="w3-card w3-round w3-white">
         <div class="w3-container">
          <h4 class="w3-center">Open & Equal</h4>
-         <p class="w3-center"><img src="logo1.png" class="w3-circle" style="height:106px;width:106px" alt="Avatar"></p>
+         <p class="w3-center"><img src="{{url_for('static', filename='logo1.png')}}" class="w3-circle" style="height:106px;width:106px" alt="Avatar"></p>
          <hr>
          <p><i class="fa fa-pencil fa-fw w3-margin-right w3-text-theme"></i> Workplace Advocate for LGBTQ+</p>
          <p><i class="fa fa-home fa-fw w3-margin-right w3-text-theme"></i> Chicago, IL</p>
@@ -150,17 +150,17 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Open Sans", sans-serif}
       </div>
       
       <div class="w3-container w3-card w3-white w3-round w3-margin"><br>
-        <img src="erin.png" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:60px">
+        <img src="{{url_for('static', filename='erin.png')}}" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:60px">
         <span class="w3-right w3-opacity">1 min</span>
         <h4>Erin Uritus</h4><br>
         <hr class="w3-clear">
         <p>Workplace Summit!</p>
           <div class="w3-row-padding" style="margin:0 -16px">
             <div class="w3-half">
-              <img src="conference_1.png" width=330px height= 230px alt="Northern Lights" class="w3-margin-bottom">
+              <img src="{{url_for('static', filename='conference_1.png')}}" width=330px height= 230px alt="Northern Lights" class="w3-margin-bottom">
             </div>
             <div class="w3-half">
-              <img src="conference_2.png" style="width:100%" alt="Nature" class="w3-margin-bottom">
+              <img src="{{url_for('static', filename='conference_2.png')}}" style="width:100%" alt="Nature" class="w3-margin-bottom">
           </div>
         </div>
         <button type="button" class="w3-button w3-theme-d1 w3-margin-bottom"><i class="fa fa-thumbs-up"></i>  Like</button> 
@@ -168,7 +168,7 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Open Sans", sans-serif}
       </div>
       
       <div class="w3-container w3-card w3-white w3-round w3-margin"><br>
-        <img src="head1.png" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:60px">
+        <img src="{{url_for('static', filename='head1.png')}}" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:60px">
         <span class="w3-right w3-opacity">16 min</span>
         <h4>Jane Doe</h4><br>
         <hr class="w3-clear">
@@ -178,12 +178,12 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Open Sans", sans-serif}
       </div>  
 
       <div class="w3-container w3-card w3-white w3-round w3-margin"><br>
-        <img src="head2.png" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:60px">
+        <img src="{{url_for('static', filename='head2.png')}}" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:60px">
         <span class="w3-right w3-opacity">32 min</span>
         <h4>Joe Smith</h4><br>
         <hr class="w3-clear">
         <p>What do y'all think about this article?</p>
-        <img src="fact_sheet.png" style="width:100%" class="w3-margin-bottom">
+        <img src="{{url_for('static', filename='fact_sheet.png')}}" style="width:100%" class="w3-margin-bottom">
         <a href = "http://outandequal.org/2017-workplace-equality-fact-sheet/"
         <p>Fact sheet</p>
       </a>
@@ -199,7 +199,7 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Open Sans", sans-serif}
       <div class="w3-card w3-round w3-white w3-center">
         <div class="w3-container">
           <p>Upcoming Events:</p>
-          <img src="event.png" alt="Forest" style="width:100%;">
+          <img src="{{url_for('static', filename='event.png')}}" alt="Forest" style="width:100%;">
           <p><strong>Workplace Summit</strong></p>
           <p>October 1, 2018</p>
           <p>Seattle, WA</p>
@@ -211,7 +211,7 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Open Sans", sans-serif}
       <div class="w3-card w3-round w3-white w3-center">
         <div class="w3-container">
           <p>Friend Request</p>
-          <img src="head1.png" alt="Avatar" style="width:50%"><br>
+          <img src="{{url_for('static', filename='head1.png')}}" alt="Avatar" style="width:50%"><br>
           <span>Jane Doe</span>
           <div class="w3-row w3-opacity">
             <div class="w3-half">
