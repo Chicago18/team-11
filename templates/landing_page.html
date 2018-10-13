@@ -14,12 +14,14 @@
         <link rel="alternate" type="application/rss+xml" title="GitHub Universe · Oct 16 - 17, 2018 · San Francisco, CA" href="https://githubuniverse.com/feed.xml">
 
         <!-- CSS -->
-        <link rel="stylesheet" media="screen" href="./assets/index.css">
+        <link rel="stylesheet" media="screen" href="{{url_for('static', filename='index.css')}}">
+        <!-- <link rel="stylesheet" media="screen" href="./assets/index.css"> -->
 
 
         <!-- ICONS -->
         <link rel="shortcut icon" type="image/ico" href="">
         <link rel="apple-touch-icon" href="https://githubuniverse.com/assets/img/favicons/apple-touch-icon.png">
+        <link rel="icon" href="{{url_for('static', filename='logo_out.png')}}">
         <link rel="icon" href="./assets/logo_out.png">
 
         <!-- Begin Jekyll SEO tag v2.5.0 -->
@@ -34,7 +36,8 @@
 <meta property="og:image" content="https://githubuniverse.com/assets/img/GitHub-Universe-2018.png">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:site" content="@githubuniverse">
-<script async="" src="./assets/analytics.js"></script><script type="application/ld+json">
+<script async="" src="{{url_for('static', filename='analytics.js')}}"></script>
+<script type="application/ld+json">
 {"@type":"WebSite","publisher":{GitHub Universe · Oct 16 - 17, 2018 · San Francisco, CA_files"@type":"Organization","logo":{"@type":"ImageObject","url":"https://githubuniverse.com/assets/img/GitHub-Universe-2018.png"}},"url":"https://githubuniverse.com/","headline":"GitHub Universe · Oct 16 - 17, 2018 · San Francisco, CA","name":"GitHub Universe · Oct 16 - 17, 2018 · San Francisco, CA","image":"https://githubuniverse.com/assets/img/GitHub-Universe-2018.png","description":"GitHub Universe is a conference for the builders, planners, and leaders defining the future of software","@context":"http://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
@@ -73,7 +76,8 @@
 				<a href="https://githubuniverse.com/">
 				
 <!-- 					<img id="intro-icon-sm" src="./assets/logo_out.png" alt="GitHub Universe icon" style="opacity: 1; transform: matrix(0, 0, 0, 0, 0, 0);"> -->
-					<img id="icon-logotype" src="./assets/logo_blue.jpg" alt="GitHub Universe Logo type" style="transform: matrix(1, 0, 0, 1, 0, 0);">
+                    <img id="icon-logotype" src="{{url_for('static', filename='logo_blue.jpg')}}" alt="GitHub Universe Logo type" style="transform: matrix(1, 0, 0, 1, 0, 0);">
+					<!-- <img id="icon-logotype" src="./assets/logo_blue.jpg" alt="GitHub Universe Logo type" style="transform: matrix(1, 0, 0, 1, 0, 0);"> -->
 				
 				</a>
 			</div>
@@ -107,7 +111,7 @@
 			</nav>
 
 			<div class="site-header-login">
-					<a class="button button--sm" href="https://githubuniverse.com/get-tickets/">Log In / Register</a>
+					<a class="button button--sm" href="/login">Log In / Register</a>
 			</div>
 
 			<div class="burger" id="mobile-menu-toggle">
@@ -134,12 +138,13 @@
         <polyline fill="none" stroke="#1C2329" stroke-width="16" stroke-linecap="round" stroke-linejoin="round" points="345.5,8.1
         	458,72.2 121.6,264.8 120.5,392.7 233,456.8 233.7,585.4 9.1,456.8 " style="stroke-dashoffset: 1e-05; stroke-dasharray: none;"></polyline>
     </svg>
-        <img class="mb-4" id="intro-icon" src="./assets/logo_out.png" alt="GitHub Universe icon" style="transform: translate3d(0px, -2.88px, 0px); opacity: 1;">
+        <img class="mb-4" id="intro-icon" src="{{url_for('static', filename='logo_out.png')}}" alt="GitHub Universe icon" style="transform: translate3d(0px, -2.88px, 0px); opacity: 1;">
+        <!-- <img class="mb-4" id="intro-icon" src="./assets/logo_out.png" alt="GitHub Universe icon" style="transform: translate3d(0px, -2.88px, 0px); opacity: 1;"> -->
         <h1 class="h1 container--thin">Out & Equal Workplace Advocates is the world’s premier nonprofit organization dedicated to achieving lesbian, gay, bisexual, transgender, and queer workplace equality.</h1>
         <p class="h5 mb-2 alt-font">Coming Soon</p>
         <p class="p-sm alt-font">Made with <3 @ Code for Good</p>
         <div class="mt-4">
-            <a class="button" href="https://githubuniverse.com/get-tickets/"><span>Log In / Register</span></a>
+            <a class="button" href="login"><span>Log In / Register</span></a>
         </div>
     </div>
 
@@ -150,7 +155,8 @@
 
 
 <figure class="bg-purple m-0 p-0">
-    <img class="img-full in-view" data-animate-in="fade" data-animate-in-delay="400" src="./assets/speaker_woman.jpg" alt="GitHub Universe 2017 image" style="transition-delay: 0.4s;">
+    <img class="img-full in-view" data-animate-in="fade" data-animate-in-delay="400" src="{{url_for('static', filename='speaker_woman.jpg')}}" alt="GitHub Universe 2017 image" style="transition-delay: 0.4s">
+    <!-- <img class="img-full in-view" data-animate-in="fade" data-animate-in-delay="400" src="./assets/speaker_woman.jpg" alt="GitHub Universe 2017 image" style="transition-delay: 0.4s;"> -->
 </figure>
 
 
@@ -295,7 +301,8 @@ We partner with Fortune 1000 companies and government agencies to provide execut
 </div>
 
 <figure class="bg-orange m-0 p-0">
-    <img class="img-full in-view" data-animate-in="fade" data-animate-in-delay="400" src="./assets/people.jpg" alt="GitHub Universe lounge 2017" style="transition-delay: 0.4s;">
+    <img class="img-full in-view" data-animate-in="fade" data-animate-in-delay="400" src='{{url_for('static', filename='people.jpg')}}' alt="GitHub Universe lounge 2017" style="transition-delay: 0.4s">
+    <!-- <img class="img-full in-view" data-animate-in="fade" data-animate-in-delay="400" src="./assets/people.jpg" alt="GitHub Universe lounge 2017" style="transition-delay: 0.4s;"> -->
 </figure>
 
 
@@ -304,7 +311,8 @@ We partner with Fortune 1000 companies and government agencies to provide execut
     <header class="container-full pt-8 pb-6 container-pattern-orange">
         <div class="container text-center in-view" data-animate-in="up">
             <figure class="shape-levitate mb-4 p-0">
-                <img src="./assets/cube-sponsors.svg" alt="Cube Shape">
+                <img src='{{url_for('static', filename='cube-sponsors.svg')}}' alt="Cube Shape">
+                <!-- <img src="./assets/cube-sponsors.svg" alt="Cube Shape"> -->
             </figure>
 
             <h3 class="h2">What's New at Out & Equal</h3>
@@ -366,7 +374,8 @@ To all 6,000 attendees, presenters, speakers, exhibitors, and sponsors who helpe
                     </div>
                 </div>
             </form>
-            <script src="./assets/mc-validate.js"></script>
+            <script src="{{url_for('static', filename='mc-validate.js')}}"></script>
+            <!-- <script src="./assets/mc-validate.js"></script> -->
             <script>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
         </div>
     </div>
@@ -377,11 +386,17 @@ To all 6,000 attendees, presenters, speakers, exhibitors, and sponsors who helpe
 <footer class="site-footer" role="contentinfo">
     <div class="container-wide">
         <figure class="m-0 p-0 d-none d-md-flex flex-items-center flex-auto">
-            <span class="rotate-3d mr-4"><img src="./assets/cube-purple.svg" alt="cube"></span>
+            <span class="rotate-3d mr-4"><img src="{{url_for('static', filename='cube-purple.svg')}}" alt="cube"></span>
+            <span class="rotate-3d mr-4"><img src="{{url_for('static', filename='cube-green.svg')}}" alt="cube"></span>
+            <span class="rotate-3d mr-4"><img src="{{url_for('static', filename='cube-pink.svg')}}" alt="cube"></span>
+            <span class="rotate-3d mr-4"><img src="{{url_for('static', filename='cube-blue.svg')}}" alt="cube"></span>
+            <span class="rotate-3d mr-4"><img src="{{url_for('static', filename='cube-orange.svg')}}" alt="cube"></span>
+
+            <!-- <span class="rotate-3d mr-4"><img src="./assets/cube-purple.svg" alt="cube"></span>
             <span class="rotate-3d mr-4"><img src="./assets/cube-green.svg" alt="cube"></span>
             <span class="rotate-3d mr-4"><img src="./assets/cube-pink.svg" alt="cube"></span>
             <span class="rotate-3d mr-4"><img src="./assets/cube-blue.svg" alt="cube"></span>
-            <span class="rotate-3d mr-4"><img src="./assets/cube-orange.svg" alt="cube"></span>
+            <span class="rotate-3d mr-4"><img src="./assets/cube-orange.svg" alt="cube"></span> -->
         </figure>
 
         <ul class="site-footer__nav flex-auto">
@@ -407,17 +422,20 @@ To all 6,000 attendees, presenters, speakers, exhibitors, and sponsors who helpe
             <ul>
                 <li>
                     <a href="https://twitter.com/github" target="_blank" title="GitHub Twitter">
-                        <img src="./assets/twitter.svg" alt="Twitter">
+                        <img src="{{url_for('static', filename='twitter.svg')}}" alt="Twitter">
+                        <!-- <img src="./assets/twitter.svg" alt="Twitter"> -->
                     </a>
                 </li>
                 <li>
                     <a href="http://instagram.com/github" target="_blank" title="GitHub Instagram">
-                        <img src="./assets/instagram.svg" alt="Instagram">
+                        <img src="{{url_for('static', filename='instagram.svg')}}" alt="Instagram">
+                        <!-- <img src="./assets/instagram.svg" alt="Instagram"> -->
                     </a>
                 </li>
                 <li>
                     <a href="https://www.youtube.com/GitHub" target="_blank" title="GitHub Youtube">
-                        <img src="./assets/youtube.svg" alt="youtube">
+                        <img src="{{url_for('static', filename='youtube.svg')}}" alt="youtube">
+                        <!-- <img src="./assets/youtube.svg" alt="youtube"> -->
                     </a>
                 </li>
             </ul>
@@ -425,13 +443,17 @@ To all 6,000 attendees, presenters, speakers, exhibitors, and sponsors who helpe
         </div>
 
         <div class="d-flex flex-items-center flex-justify-center mt-5 mt-md-">
-            <img class="mr-4 d-md-none" src="./assets/cube-complex-rainbow.svg" alt="cube">
+            <img class="mr-4 d-md-none" src="{{url_for('static', filename='cube-complex-rainbow.svg')}}" alt="cube">
+            <!-- <img class="mr-4 d-md-none" src="./assets/cube-complex-rainbow.svg" alt="cube"> -->
             <a class="by-github" href="https://github.com/" target="_blank">
-                <img src="./assets/code.svg" alt="coded">
+                <img src="{{url_for('static', filename='code.svg')}}" alt="coded">
+                <!-- <img src="./assets/code.svg" alt="coded"> -->
                 <span>Made with</span>
-                <img src="./assets/heart.svg" alt="love">
+                <img src="{{url_for('static', filename='heart.svg')}}" alt="coded">
+                <!-- <img src="./assets/heart.svg" alt="love"> -->
                 <span>by Team 11</span>
-                <img src="./assets/GitHub.svg" alt="GitHub">
+                <img src="{{url_for('static', filename='GitHub.svg')}}" alt="GitHub">
+                <!-- <img src="./assets/GitHub.svg" alt="GitHub"> -->
             </a>
         </div>
 
@@ -440,9 +462,14 @@ To all 6,000 attendees, presenters, speakers, exhibitors, and sponsors who helpe
 
 
         <!-- JAVASCRIPT -->
-        <script src="./assets/jquery-3.3.1.min.js"></script>
-        <script src="./assets/TweenMax.min.js"></script>
-        <script src="./assets/main.js"></script>
+        <script src="{{url_for('static', filename='jquery-3.3.1.min.js')}}"></script>
+        <script src="{{url_for('static', filename='TweenMax.min.js')}}"></script>
+        <script src="{{url_for('static', filename='main.js')}}"></script>
+        <script type="text/javascript" src="{{ url_for('static',filename='l_script.js') }} "></script>
+
+        <!-- <script src="./assets/jquery-3.3.1.min.js"></script> -->
+        <!-- <script src="./assets/TweenMax.min.js"></script> -->
+        <!-- <script src="./assets/main.js"></script> -->
 
         <script>
             (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
